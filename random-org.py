@@ -6,12 +6,6 @@ import os
 
 load_dotenv()
 
-class Result():
-    def __init__(self, jsonrpc, result, id):
-        self.jsonrpc = jsonrpc
-        self.result = result
-        self.id = id
-
 def main():
     if len(sys.argv) < 4:
         print("Usage: python random.py <COUNT OF NUMBERS> <MIN VALUE> <MAX VALUE>")
